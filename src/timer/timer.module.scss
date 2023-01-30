@@ -1,0 +1,26 @@
+@use "../variables.scss" as mixin;
+.countdown {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: mixin.$spaceY;
+  .timer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .digit_text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .digit {
+      font-size: 10rem;
+    }
+    .text {
+      font-size: 2rem;
+      text-transform: uppercase;
+    }
+  }
+}
